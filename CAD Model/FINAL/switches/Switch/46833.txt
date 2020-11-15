@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"DB1C-A1LB";"";
+"TraceParts.PartVersion";"1.0.3";"";
+"SUPPLIER";"Cherry";"";
+"TraceParts.PartStatus";"Published";"";
+"RS_STOCK_NUMBER";"1594590";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"SPDT-NO/NC Short Lever Microswitch, 6 A@ 250 V ac";"";
+"TraceParts.InstanceId";"10-23022015-109475APWXOO54NOR2HA9E6QOLHDSY9";"";
+"TraceParts.PartTitle";"SPDT-NO/NC Short Lever Microswitch, 6 A@ 250 V ac";"";
+"TraceParts.PartNumber";"10-23022015-109475";"";
+"TIMESTAMP";"16/02/2015 16:02";"";
+"REVISION";"A";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:/F_RS_COMPONENTS/PSSS_428047/PSS_428054/PSF_428118/10-23022015-109475";"";

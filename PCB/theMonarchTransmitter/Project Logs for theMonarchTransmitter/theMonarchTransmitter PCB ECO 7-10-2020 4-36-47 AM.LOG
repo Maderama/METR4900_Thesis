@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetP1_2 Pin=P17-1
+Removed Pin From Net: NetName=NetP5_2 Pin=P17-2
+Removed Pin From Net: NetName=NetP7_2 Pin=P17-3
+Removed Pin From Net: NetName=NetP11_2 Pin=P17-4
+Removed Pin From Net: NetName=NetP13_2 Pin=P17-5
+Removed Pin From Net: NetName=NetP15_2 Pin=P17-6
+Removed Pin From Net: NetName=NetP9_2 Pin=P17-7
+Added Component: Designator=P19(TE_826936-3)
+Added Pin To Net: NetName=NetP7_2 Pin=P19-1
+Added Pin To Net: NetName=NetP11_2 Pin=P19-2
+Added Pin To Net: NetName=NetP13_2 Pin=P19-3
+Added Member To Class: ClassName=theMonarchTransmitter Member=Component P19 3x1 Header

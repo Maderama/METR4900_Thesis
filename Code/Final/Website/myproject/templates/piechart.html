@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title }}</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+
+    <canvas id="chart" width="600" height="400"></canvas>
+    <script>
+      var pieData = [
+        {% for item, label, colors in set %}
+          {
+            value: {{item}},
+            label: "{{label}}",
+            color : "{{colors}}"
+          },
+        {% endfor %}
+      ];
+
+      // get bar chart canvas
+      var mychart = document.getElementById("chart").getContext("2d");
+      steps = 10
+      max = {{ max }}
+
+      // draw pie chart
+      new Chart(document.getElementById("chart").getContext("2d")).Pie(pieData);
+
+    </script>
+</body>
+</html>
+
+chartClicked(event){
+  var yTop = this.chart.chartArea.top;
+  var yBottom = this.chart.chartArea.bottom;
+
+  var yMin = this.chart.scales['y-axis-0'].min;
+  var yMax = this.chart.scales['y-axis-0'].max;
+  var newY = 0;
+
+  if (event.offsetY <= yBottom && event.offsetY >= yTop) {
+      newY = Math.abs((event.offsetY - yTop) / (yBottom - yTop));
+      newY = (newY - 1) * -1;
+      newY = newY * (Math.abs(yMax - yMin)) + yMin;
+  };
+
+  var xTop = this.chart.chartArea.left;
+  var xBottom = this.chart.chartArea.right;
+  var xMin = this.chart.scales['x-axis-0'].min;
+  var xMax = this.chart.scales['x-axis-0'].max;
+  var newX = 0;
+
+  if (event.offsetX <= xBottom && event.offsetX >= xTop) {
+      newX = Math.abs((event.offsetX - xTop) / (xBottom - xTop));
+      newX = newX * (Math.abs(xMax - xMin)) + xMin;
+  };
+
+  console.log(newX, newY);
+};

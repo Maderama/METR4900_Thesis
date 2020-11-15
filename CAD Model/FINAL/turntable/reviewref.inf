@@ -1,0 +1,56 @@
+﻿|***************************|
+    REFERENCE INFORMATION    
+|***************************|
+ Reference No.1 out of 1 
+
+Reference:
+   TYPE   : plane
+
+Status   : in geometry
+
+
+Reference owner:
+ Model   :
+   NAME   : LAZY_SUSAN_BOTTOM 
+   TYPE   : Part
+ Feature :
+
+    FEATURE NUMBER       5
+    INTERNAL FEATURE ID  66
+    PARENTS = 3(#3) 5(#2) 7(#1) 
+    CHILDREN = 86(#6) 231(#8) 260(#9) 405(#10) 328(#11) 
+
+
+ PROTRUSION: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Add                                                
+   4      Section            Defined                                            
+   4.1    Setup Plane        Defined                                            
+   4.1.1  Sketching Plane    FRONT:F1(DATUM PLANE)                              
+   4.1.2  View Direction     Side 1                                             
+   4.1.3  Orientation        Top                                                
+   4.1.4  Reference          TOP:F2(DATUM PLANE)                                
+   4.2    Sketch             Defined                                            
+   5      Feature Form       Solid                                              
+   6      Direction          Side 2                                             
+   7      Depth              Defined                                            
+   7.1    Side One           Defined                                            
+   7.1.1  Side One Depth     None                                               
+   7.2    Side Two           Defined                                            
+   7.2.1  Side Two Depth     Variable                                           
+   7.2.2  Value              8.00                                               
+
+    SECTION NAME = Section 1 
+
+    FEATURE IS IN LAYER(S) :
+      02___PRT_ALL_AXES - OPERATION = SHOWN
+
+    FEATURE'S DIMENSIONS:
+    d3 = (Displayed:) 8 General_Dims
+         (   Stored:) 8.0 ( 0.2, -0.2 ) 
+    d4 = (Displayed:) 100 General_Dims Dia
+         (   Stored:) 100.0 ( 0.3, -0.3 ) 
